@@ -20,7 +20,9 @@ A process consists of more than 1 thread
 
 Which takes us to next block i.e thread
 A thread is a unit that executes a code or command given user. So basically when we give any command to a computer it tells the thread to execute 
-it and when this execution occurs it is called a process 
+it and when this execution occurs it is called a process .
+
+
 <img width="288" height="175" alt="image" src="https://github.com/user-attachments/assets/a2cde7ef-55a6-4a0c-8572-39179ab0bcd6" />
 
 
