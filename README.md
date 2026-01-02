@@ -5,6 +5,7 @@ A process of attaching a malicious code to the APC queue or APC Injection is a p
 Asynchronous Procedure Call mechanism to execute injected code(i.e malicious code) inside an existing thread without creating a new one.
 
 But what is APC ?
+
 Asynchronous procedure calls (APCs) are functions executed asynchronously within a specific thread of a PC.
 It is used mostly for 
  - I/O operations and completions
