@@ -16,7 +16,9 @@ There are Processes and Threads.
 Now what is a process 
 It is a running program in a PC (ex - virtualbox.exe , notepad++.exe)
 A process consists of more than 1 thread
+
 <img width="846" height="60" alt="image" src="https://github.com/user-attachments/assets/c06cd2a4-7eb1-428a-9e31-d0219bb9a17d" />
+
 
 
 Which takes us to next block i.e thread
