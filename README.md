@@ -41,5 +41,5 @@ APC executes only when a thread enters an alertable state but what is an Alertab
 
 ALERTABLE STATE - AN ALERTABLE STATE IS A CONDITION WHEN A THREAD IS IN REST OR WAITING TO EXECUTE THE QUEUED APC'S.
 
-These were the Prerequisites that we should know before trying to learn about WHY AND HOW IS APC INJECTION DONE .
+These were the Prerequisites that we should know before trying to learn about WHY AND HOW IS APC INJECTION DONE or WHAT IS IT?
 
