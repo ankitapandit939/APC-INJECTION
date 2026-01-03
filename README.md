@@ -118,7 +118,8 @@ There are some important points that must be noted:
 
   Figure Reference:
 
-  <img width="1457" height="635" alt="image" src="https://github.com/user-attachments/assets/e21774f6-4f6b-4363-9f13-d7905771a565" />
+  <img width="1588" height="511" alt="image" src="https://github.com/user-attachments/assets/785ab603-6337-47c3-9ebc-5eb1fd8a7f90" />
+
 
 
   Now since we know the basics we can continue our Journey to APC 
