@@ -160,7 +160,10 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
     But before WHAT IS APC ?
 
-    So APC stands for Asynchronous procedure calls these are the functions executed asynchronously within a specific thread of a Machine.
+    So APC stands for Asynchronous procedure calls these are the functions executed asynchronously within a specific thread of a Machine . Basically a request sent to a
+    THREAD.
+    
+    
 
     Here is a Breakdown of Asynchronous procedure calls
 
