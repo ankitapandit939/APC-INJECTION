@@ -158,7 +158,7 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
     HERE COMES THE MAIN TOPIC OF DISCUSSION **APC INJECTION**
 
-    But before WAHT IS APC ?
+    But before WHAT IS APC ?
 
     So APC stands for Asynchronous procedure calls these are the functions executed asynchronously within a specific thread of a Machine.
 
@@ -189,6 +189,9 @@ is the OS-approved reference that allows safe and controlled operations on that 
        the song has ended not in between i.e The ad does not interrupt the song immediately it
        waits until the song finishes just like that SIMPLE APC waits until thread is ready .
 
+       <img width="364" height="193" alt="image" src="https://github.com/user-attachments/assets/92ecc5be-a28d-41e7-8e5e-6e4707efb02f" />
+
+
 
      - EARLY BIRD APC - In this the APC is queued before that thread starts running so
        that it executes as soon as the thread begins
@@ -198,6 +201,9 @@ is the OS-approved reference that allows safe and controlled operations on that 
        You open SPOTIFY (again not premium) and AD plays immediatley that is The AD is ready
        before the start of the song/music even before the APP fully loads.
 
+       <img width="363" height="191" alt="image" src="https://github.com/user-attachments/assets/e12ecbb3-23ef-4645-8260-897c6340f64e" />
+
+
        
      - SPECIAL USER APC - It is a high priority APC and run when certain system events happen
        even if the thread is not waiting .
@@ -205,11 +211,15 @@ is the OS-approved reference that allows safe and controlled operations on that 
        for example :
 
        While streaming on spotify you come across a forced AD means the the AD is
-       event-triggered , it does not wait for the song to end because it is HIGH PRIORITY 
+       event-triggered , it does not wait for the song to end because it is HIGH PRIORITY
+
+
+       <img width="368" height="192" alt="image" src="https://github.com/user-attachments/assets/4f5dc1df-ff78-4f3a-a5cb-081fe7bedd43" />
 
 
 
-   <img width="1135" height="199" alt="image" src="https://github.com/user-attachments/assets/42f3308b-40d6-4516-9f03-dc5e52ecb226" />
+
+   
 
 
 
