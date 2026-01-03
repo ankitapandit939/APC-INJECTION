@@ -147,6 +147,8 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
   - A Handle is a unique identifier that gives access to a specific thread or process that an attacker can use to ADD their APC to the TARGETS thread queue.
 
+    simplying it the process or thread is a room and handle is a KEY to that room .
+
     like in the figure below we can see with the use of WINDOWS API , THREAD , HANDLE an attacker is inserting a secret Song i.e APC
 
 
@@ -154,8 +156,66 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
 
 
+    HERE COMES THE MAIN TOPIC OF DISCUSSION **APC INJECTION**
 
-   
+    But before WAHT IS APC ?
+
+    So APC stands for Asynchronous procedure calls these are the functions executed asynchronously within a specific thread of a Machine.
+
+    Here is a Breakdown of Asynchronous procedure calls
+
+   Asynchronous    :
+                   * The task does not run immediately.
+                   * It does not block other operations.
+                   * It runs later when the system is ready.
+
+   Procedure Calls :
+                   * A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context). 
+
+
+   There are three types of APCs
+
+   * SIMPLE APC
+   * EARLY BIRD APC
+   * SPECIAL USER APC
+
+
+     - SIMPLE APC - A simple APC runs only when a thread is waiting or idle (in an alertable
+     state)
+
+     for example :
+
+     You are listening to a Song on Spotify (not  a premium user) and the AD only plays when
+     the song has ended not in between i.e The ad does not interrupt the song immediately it
+     waits until the song finishes just like that SIMPLE APC waits until thread is ready .
+
+
+     - EARLY BIRD APC - In this the APC is queued before that thread starts running so
+       that it executes as soon as the thread begins
+
+       for example :
+
+       You open SPOTIFY (again not premium) and AD plays immediatley that is The AD is ready
+       before the start of the song/music even before the APP fully loads.
+
+       
+     - SPECIAL USER APC - It is a high priority APC and run when certain system events happen
+       even if the thread is not waiting .
+
+       for example :
+
+       While streaming on spotify you come across a forced AD means the the AD is
+       event-triggered , it does not wait for the song to end because it is HIGH PRIORITY 
+
+
+
+   <img width="1135" height="199" alt="image" src="https://github.com/user-attachments/assets/42f3308b-40d6-4516-9f03-dc5e52ecb226" />
+
+
+
+
+<img width="813" height="82" alt="image" src="https://github.com/user-attachments/assets/e64d9612-0048-4b6c-a364-3920e08f8f97" />
+
 
 
 
