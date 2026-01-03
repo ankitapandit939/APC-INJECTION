@@ -234,6 +234,25 @@ APC QUEUE - An APC queue is a list where Asynchronous Procedure Calls (APCs) are
 
  -The APC runs when the thread enters an _**ALERTABLE STATE**_ or when Conditions for that APC is met.
 
+ <img width="897" height="689" alt="image" src="https://github.com/user-attachments/assets/1dc5f1e6-3a7a-465b-a5aa-59408f0fba8c" />
+
+
+
+**ALERTABLE STATE**
+
+- A special state where a THREAD temporarily pauses its main work to process its APC
+  QUEUE .
+
+  for example:
+  Think of a scheduled Break during your study hours to do some doom scrolling .
+  basically a coffee break.
+
+
+  <img width="808" height="212" alt="image" src="https://github.com/user-attachments/assets/f2a37c0f-ef78-4963-ac0a-699a329791f8" />
+
+
+
+
  
 
 
