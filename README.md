@@ -7,16 +7,25 @@ But before we talk about What is APC or how APC Injection is done there are some
 
 
 TABLE OF CONTENTS:
--PROCESS
--THREAD                                         
--VIRTUAL MEMORY
--MEMORY PERMISSION
--SHELL CODE
--WINDOWS API
--HANDLE
--WHAT IS APC
--APC QUEUE
--ALERTABLE STATE
+  -PROCESS
+  
+  -THREAD                                         
+  
+  -VIRTUAL MEMORY
+  
+  -MEMORY PERMISSION
+  
+  -SHELL CODE
+  
+  -WINDOWS API
+  
+  -HANDLE
+  
+  -WHAT IS APC
+  
+  -APC QUEUE
+  
+  -ALERTABLE STATE
 
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
