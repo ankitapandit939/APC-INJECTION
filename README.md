@@ -31,6 +31,10 @@ TABLE OF CONTENTS:
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
 
+  for example : virtualbox.exe,notepad.exe,androidstudio.exe
+
+  
+
 that takes us to our next basic unit THREAD
 
 A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer 
@@ -58,6 +62,8 @@ But how does a Computer use Virtual Memory to manage / run A PROGRAM
 
 well a Virtal Memory also need permission to READ , WRITE AND EXECUTE an assigned Process .
 
+Now each Process has its own private virtual memory that is protected from other processes
+
 that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
 
 * **Read (R):** Allows a program to read data from a memory location.
@@ -65,6 +71,18 @@ that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
 * **Execute (X):** Allows the CPU to run instructions from a memory location.
 * These permissions prevent misuse of memory, such as executing data or modifying code.
 * The operating system enforces these permissions to keep programs secure and stable.
+
+   Even if there are permissions for Virtualalloc() attackers can misuse the memory by using SHELL CODE but what is it ?
+
+  A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to write it in a memory location with EXECUTE(X) permissions.
+
+
+  Figure Reference:
+
+  <img width="1457" height="635" alt="image" src="https://github.com/user-attachments/assets/e21774f6-4f6b-4363-9f13-d7905771a565" />
+
+
+  
 
 
 
