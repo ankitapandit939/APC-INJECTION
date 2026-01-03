@@ -47,18 +47,18 @@ that takes us to our next basic unit THREAD
 
 A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer.
 
-For more clear understanding think that _YOU OPEN CHROME AND SEARCH FOR YOUTUBE_
+For more clear understanding think that _YOU OPEN CHROME AND SEARCH FOR SPOTIFY_
 
 
-What happens next Youtube loads and you search/view a video on your feed 
+What happens next SPOTIFY loads and you search/view a SONG on your feed 
 
-how does this process happens i.e THREAD plays a major role 
-
-
-One thread loads a webpage
+how does this process happens ? for this process THREAD plays a major role 
 
 
-Another plays a video
+One thread loads a webpage(i.e SPOTIFY webpage)
+
+
+Another plays a plays the song.
 
 
 
