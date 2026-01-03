@@ -257,8 +257,6 @@ Asynchronous Procedure Call mechanism to execute injected code(i.e malicious cod
 
  -The APC runs when the thread enters an _**ALERTABLE STATE**_ or when Conditions for that APC is met.
 
- <img width="897" height="689" alt="image" src="https://github.com/user-attachments/assets/1dc5f1e6-3a7a-465b-a5aa-59408f0fba8c" />
-
 
 
 **ALERTABLE STATE**
