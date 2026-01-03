@@ -147,6 +147,12 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
   - A Handle is a unique identifier that gives access to a specific thread or process that an attacker can use to ADD their APC to the TARGETS thread queue.
 
+    like in the figure below we can see with the use of WINDOWS API , THREAD , HANDLE an attacker is inserting a secret Song i.e APC
+
+
+    <img width="868" height="448" alt="image" src="https://github.com/user-attachments/assets/964b94e5-aa2f-4c75-8c9a-b33645a50f32" />
+
+
 
 
    
