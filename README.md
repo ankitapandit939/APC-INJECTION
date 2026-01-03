@@ -1,8 +1,35 @@
 # **APC INJECTION**
 
+<img width="1280" height="697" alt="image" src="https://github.com/user-attachments/assets/28ad2fe6-0394-4eee-bb30-0b62682955a9" />
+
+Imagine you’re listening to your favorite song on Spotify.
+
+The music is flowing smoothly, uninterrupted, until suddenly an ad plays.
+
+The interesting part isn’t the ad itself.
+
+It’s when it plays.
+
+The ad doesn’t interrupt the song at a random moment.
+It waits.
+It plays only when Spotify decides the timing is right, during an allowed break.
+
+Once the ad finishes, the song resumes as if nothing happened.
+
+Windows works in a surprisingly similar way.
+
+Some code does not execute immediately.
+It waits silently in the background, queued, until the system allows it to run.
+
+This mechanism is called an **Asynchronous Procedure Call**, or **APC**.
+
+Today’s goal is to understand **APC Injection** -
+from absolute **basics to advanced** attacker behavior.
+
+To truly understand how APC Injection works, we must first understand the building blocks that make it possible.
 
 
-# **TABLE OF CONTENTS:**
+# **PREREQUISITES:**
  
   -PROCESS
   
