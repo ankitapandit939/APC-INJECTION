@@ -104,8 +104,8 @@ that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
 
 
   A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to
-  write it in a memory location with EXECUTE(X) permissions . It runs directly from the memory (ex - RAM ) of the machine i.e insted of ruuning a program like
-  androidstudio.exe the instructions (shellcode) will run diretly through memeory    
+  write it in a memory location with EXECUTE(X) permissions . It runs directly from the memory (ex - RAM ) of the machine i.e insted of running a program like
+  androidstudio.exe the instructions (shellcode) will run directly through memeory .   
   
 There are some important points that must be noted:
 
