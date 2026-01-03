@@ -32,11 +32,11 @@ So now WHAT IS A PROCESS IN A COMPUTER?
 
   for example : _virtualbox.exe, notepad.exe, androidstudio.exe_
 
- # _Opening Notepad.exe creates a process._
+  _Opening Notepad.exe creates a process._
 
- # _Opening Android Studio creates another process._
+  _Opening Android Studio creates another process._
 
- # _Each process runs independently._
+  _Each process runs independently._
 
  Now with context to APC injection the attacker will choose a target process like ANDROID STUDIO to run their malicious code inside it.
 
