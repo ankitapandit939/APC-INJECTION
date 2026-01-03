@@ -246,6 +246,7 @@ Asynchronous Procedure Call mechanism to execute injected code(i.e malicious cod
   QUEUE .
 
   for example:
+
   Think of a scheduled Break during your study hours to do some doom scrolling .
   basically a coffee break.
 
