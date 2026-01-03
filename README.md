@@ -1,5 +1,6 @@
 APC INJECTION 
-A process of attaching a malicious code to the APC queue or APC Injection is a process injection technique that abuses Windows’ Asynchronous Procedure Call 
+
+  A process of attaching a malicious code to the APC queue or APC Injection is a process injection technique that abuses Windows’ Asynchronous Procedure Call 
 mechanism to execute injected code(i.e malicious code) inside an existing thread without creating a new one.
 
 But before we talk about What is APC or how APC Injection is done there are some concepts we need to know 
@@ -40,7 +41,16 @@ But what are the Objectives of a Virtual Memory
  * It uses both RAM and disk space, loading program parts into RAM only when needed.
  * This helps the system run more programs at the same time and use memory efficiently.
 
-<img width="328" height="154" alt="image" src="https://github.com/user-attachments/assets/4bf99b84-6e82-47e2-b307-5b637bb2e6e7" />
+
+<img width="1042" height="745" alt="image" src="https://github.com/user-attachments/assets/b7a34058-17e3-406c-9d3c-93f348785acf" />
+
+But how does a Computer use Virtual Memory to manage / run A PROGRAM
+
+well a Virtal Memory also need permission to READ , WRITE AND EXECUTE an assigned Process .
+that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
+
+
+
 
 
 
