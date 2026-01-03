@@ -136,7 +136,18 @@ for example
   * opening a file
 
 
-  * allocating a memory  
+  * allocating a memory
+
+Since APC INJECTION is more about using THREADS ,
+
+in programs to pinpoint a specific thread we need a unique id right? And here comes the role of _HANDLE_ which 
+
+is the OS-approved reference that allows safe and controlled operations on that exact thread.
+
+
+  - A Handle is a unique identifier that gives access to a specific thread or process that an attacker can use to ADD their APC to the TARGETS thread queue.
+
+
 
    
 
