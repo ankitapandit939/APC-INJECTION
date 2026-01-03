@@ -150,7 +150,7 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
     simplying it the process or thread is a room and handle is a KEY to that room .
 
-    like in the figure below we can see with the use of WINDOWS API , THREAD , HANDLE an attacker is inserting a secret Song i.e APC
+    like in the figure below we can see with the use of WINDOWS API , THREAD , HANDLE .
 
 
     <img width="1598" height="447" alt="image" src="https://github.com/user-attachments/assets/134e43de-af08-4bea-97e6-f3f1a652ecb1" />
