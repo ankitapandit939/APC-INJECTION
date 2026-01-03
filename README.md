@@ -183,11 +183,11 @@ is the OS-approved reference that allows safe and controlled operations on that 
      - SIMPLE APC - A simple APC runs only when a thread is waiting or idle (in an alertable
      state)
 
-     for example :
+       for example :
 
-     You are listening to a Song on Spotify (not  a premium user) and the AD only plays when
-     the song has ended not in between i.e The ad does not interrupt the song immediately it
-     waits until the song finishes just like that SIMPLE APC waits until thread is ready .
+       You are listening to a Song on Spotify (not  a premium user) and the AD only plays when
+       the song has ended not in between i.e The ad does not interrupt the song immediately it
+       waits until the song finishes just like that SIMPLE APC waits until thread is ready .
 
 
      - EARLY BIRD APC - In this the APC is queued before that thread starts running so
