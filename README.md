@@ -149,7 +149,7 @@ for example
   * opening a file
 
 
-  *allocating a memory  
+  * allocating a memory  
 
    
 
