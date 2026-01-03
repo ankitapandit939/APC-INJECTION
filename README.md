@@ -153,7 +153,8 @@ is the OS-approved reference that allows safe and controlled operations on that 
     like in the figure below we can see with the use of WINDOWS API , THREAD , HANDLE an attacker is inserting a secret Song i.e APC
 
 
-    <img width="868" height="448" alt="image" src="https://github.com/user-attachments/assets/964b94e5-aa2f-4c75-8c9a-b33645a50f32" />
+    <img width="1598" height="447" alt="image" src="https://github.com/user-attachments/assets/134e43de-af08-4bea-97e6-f3f1a652ecb1" />
+
 
 
 
