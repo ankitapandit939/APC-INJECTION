@@ -21,7 +21,7 @@ TABLE OF CONTENTS:
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
 
-that takes us to i=our next basic unit THREAD
+that takes us to our next basic unit THREAD
 
 A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer 
 
@@ -47,6 +47,7 @@ But what are the Objectives of a Virtual Memory
 But how does a Computer use Virtual Memory to manage / run A PROGRAM
 
 well a Virtal Memory also need permission to READ , WRITE AND EXECUTE an assigned Process .
+
 that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
 
 
