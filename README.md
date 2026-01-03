@@ -138,7 +138,16 @@ It is used mostly for
  - Asynchronous operations
 
 
-  
+But before we talk about APC there is one more important thing and that is *WINDOWS API*
+
+  Now what is WINDOWS API ? 
+
+  -In simple words these are the commands through which programs ask windows to run/do things .
+
+  for ex - * opening a file 
+           *allocating a memory
+
+    Now coming back to APC  
 
 
 
