@@ -1,8 +1,8 @@
-**APC INJECTION**
+# **APC INJECTION**
 
 
 
-**TABLE OF CONTENTS:**
+# **TABLE OF CONTENTS:**
  
   -PROCESS
   
@@ -24,7 +24,7 @@
   
   -ALERTABLE STATE
 
-_**PROCESS:**_
+# _**PROCESS:**_
 
 
 So now WHAT IS A PROCESS IN A COMPUTER?
@@ -41,7 +41,7 @@ So now WHAT IS A PROCESS IN A COMPUTER?
  Now with context to APC injection the attacker will choose a target process like ANDROID STUDIO to run their malicious code inside it.
 
   
-_**THREAD:**_
+# _**THREAD:**_
 
 that takes us to our next basic unit THREAD
 
@@ -67,7 +67,7 @@ For more simple breakdown we can refer to the figure below:
 
 <img width="1120" height="561" alt="image" src="https://github.com/user-attachments/assets/e9ba385f-3037-4795-9238-57d7cd6c1cc4" />
 
-When APC Injection is done it needs a _**VIRTUAL MEMORY**_ but What is a Virtual Memory?
+When APC Injection is done it needs a  _**VIRTUAL MEMORY**_ but What is a Virtual Memory?
 
 Virtual memory is a technique used by an operating system that lets programs think they have a large, continuous memory space, even though the actual RAM is limited and scattered in different places.
 
