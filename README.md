@@ -24,27 +24,50 @@
   
   -ALERTABLE STATE
 
-**PROCESS:** 
+_**PROCESS:**_
 
 
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
 
-  for example : virtualbox.exe,notepad.exe,androidstudio.exe
+  for example : _virtualbox.exe, notepad.exe, androidstudio.exe_
+
+ # _Opening Notepad.exe creates a process._
+
+ # _Opening Android Studio creates another process._
+
+ # _Each process runs independently._
+
+ Now with context to APC injection the attacker will choose a target process like ANDROID STUDIO to run their malicious code inside it.
 
   
-**THREAD:**
+_**THREAD:**_
 
 that takes us to our next basic unit THREAD
 
-A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer 
+A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer.
+
+For more clear understanding think that _YOU OPEN CHROME AND SEARCH FOR YOUTUBE_
+
+
+What happens next Youtube loads and you search/view a video on your feed 
+
+how does this process happens i.e THREAD plays a major role 
+
+
+One thread loads a webpage
+
+
+Another plays a video
+
+
 
 For more simple breakdown we can refer to the figure below:
 
 
 <img width="1120" height="561" alt="image" src="https://github.com/user-attachments/assets/e9ba385f-3037-4795-9238-57d7cd6c1cc4" />
 
-When APC Injection is done it needs a **VIRTUAL MEMORY** but What is a Virtual Memory?
+When APC Injection is done it needs a _**VIRTUAL MEMORY**_ but What is a Virtual Memory?
 
 Virtual memory is a technique used by an operating system that lets programs think they have a large, continuous memory space, even though the actual RAM is limited and scattered in different places.
 
