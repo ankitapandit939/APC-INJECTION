@@ -121,21 +121,8 @@ There are some important points that must be noted:
   <img width="1457" height="635" alt="image" src="https://github.com/user-attachments/assets/e21774f6-4f6b-4363-9f13-d7905771a565" />
 
 
-  Now since we know the basics we will Learn about what is APC and APC INJECTION ?
+  Now since we know the basics we can continue our Journey to APC 
 
-   APC stands for  **Asynchronous Procedure Call** they  are functions executed asynchronously within a specific thread of a PC.
-
-   **Asynchronous**   : 
-* The task does not run immediately.
-* It does not block other operations.
-* It runs later when the system is ready.
-
-
-  
-   **Procedure call** : A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context).
-It is used mostly for 
- - I/O operations and completions
- - Asynchronous operations
 
 
 But before we talk about APC there is one more important thing and that is **WINDOWS API**
