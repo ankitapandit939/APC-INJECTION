@@ -1,12 +1,8 @@
-APC INJECTION 
-
-  A process of attaching a malicious code to the APC queue or APC Injection is a process injection technique that abuses Windows’ Asynchronous Procedure Call 
-mechanism to execute injected code(i.e malicious code) inside an existing thread without creating a new one.
-
-But before we talk about What is APC or how APC Injection is done there are some concepts we need to know 
+**APC INJECTION**
 
 
-TABLE OF CONTENTS:
+
+**TABLE OF CONTENTS:**
  
   -PROCESS
   
@@ -28,12 +24,16 @@ TABLE OF CONTENTS:
   
   -ALERTABLE STATE
 
+**PROCESS:** 
+
+
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
 
   for example : virtualbox.exe,notepad.exe,androidstudio.exe
 
   
+**THREAD:**
 
 that takes us to our next basic unit THREAD
 
@@ -44,11 +44,11 @@ For more simple breakdown we can refer to the figure below:
 
 <img width="1120" height="561" alt="image" src="https://github.com/user-attachments/assets/e9ba385f-3037-4795-9238-57d7cd6c1cc4" />
 
-When APC Injection is done it needs a VIRTUAL MEMORY but What is a Virtual Memory?
+When APC Injection is done it needs a **VIRTUAL MEMORY** but What is a Virtual Memory?
 
 Virtual memory is a technique used by an operating system that lets programs think they have a large, continuous memory space, even though the actual RAM is limited and scattered in different places.
 
-But what are the Objectives of a Virtual Memory
+But what are the **Objectives** of a Virtual Memory
  * A program does not need to be fully loaded into memory to run; only the required parts are loaded.
  * Programs can be larger than the system’s physical RAM.
  * Virtual memory makes it seem like the system has more memory than it actually does.
@@ -60,11 +60,11 @@ But what are the Objectives of a Virtual Memory
 
 But how does a Computer use Virtual Memory to manage / run A PROGRAM
 
-well a Virtal Memory also need permission to READ , WRITE AND EXECUTE an assigned Process .
+well a Virtal Memory also need permission to **READ , WRITE AND EXECUTE** an assigned Process .
 
 Now each Process has its own private virtual memory that is protected from other processes
 
-that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
+that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
 
 * **Read (R):** Allows a program to read data from a memory location.
 * **Write (W):** Allows a program to modify or store data in a memory location.
@@ -72,7 +72,7 @@ that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
 * These permissions prevent misuse of memory, such as executing data or modifying code.
 * The operating system enforces these permissions to keep programs secure and stable.
 
-   Even if there are permissions for Virtualalloc() attackers can misuse the memory by using SHELL CODE but what is it ?
+   Even if there are permissions for Virtualalloc() attackers can misuse the memory by using **SHELL CODE** but what is it ?
 
   A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to write it in a memory location with EXECUTE(X) permissions.
 
@@ -80,6 +80,23 @@ that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
   Figure Reference:
 
   <img width="1457" height="635" alt="image" src="https://github.com/user-attachments/assets/e21774f6-4f6b-4363-9f13-d7905771a565" />
+
+
+  Now since we know the basics we will Learn about what is APC and APC INJECTION ?
+
+   APC stands for  **Asynchronous Procedure Call** they  are functions executed asynchronously within a specific thread of a PC.
+
+   **Asynchronous**   : 
+* The task does not run immediately.
+* It does not block other operations.
+* It runs later when the system is ready.
+
+
+  
+   **Procedure call** : A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context).
+It is used mostly for 
+ - I/O operations and completions
+ - Asynchronous operations
 
 
   
