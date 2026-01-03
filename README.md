@@ -71,6 +71,8 @@ When APC Injection is done it needs a  _**VIRTUAL MEMORY**_ but What is a Virtua
 
 Virtual memory is a technique used by an operating system that lets programs think they have a large, continuous memory space, even though the actual RAM is limited and scattered in different places.
 
+in other words Virtual memory makes each process think it owns all memory.
+
 But what are the **Objectives** of a Virtual Memory
  * A program does not need to be fully loaded into memory to run; only the required parts are loaded.
  * Programs can be larger than the system’s physical RAM.
@@ -95,9 +97,23 @@ that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
 * These permissions prevent misuse of memory, such as executing data or modifying code.
 * The operating system enforces these permissions to keep programs secure and stable.
 
-   Even if there are permissions for Virtualalloc() attackers can misuse the memory by using **SHELL CODE** but what is it ?
+  In contect to the APC INJECTION Shellcode (malicious code) is written into the virtual memory space of the target process _(ex-notepad.exe)_.
 
-  A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to write it in a memory location with EXECUTE(X) permissions.
+
+  Even if there are permissions for Virtualalloc() attackers can misuse the memory by using **SHELL CODE** but what is it ?
+
+
+  A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to
+  write it in a memory location with EXECUTE(X) permissions . It runs directly from the memory (ex - RAM ) of the machine i.e insted of ruuning a program like
+  androidstudio.exe the instructions (shellcode) will run diretly through memeory    
+  
+There are some important points that must be noted:
+
+  -If memory is not executable, shellcode cannot run.
+
+  -So attackers ensure memory has Execute permission.
+
+   __Shellcode is the “secret instruction” delivered via APC.__ 
 
 
   Figure Reference:
