@@ -185,40 +185,43 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
 
 
-    HERE COMES THE MAIN TOPIC OF DISCUSSION **APC INJECTION**
+Now that we are almost done with the prerequisites, let us connect these concepts and gradually move toward our main topic of discussion, beginning with what we mean       by an Asynchronous Procedure Call (APC).
 
-    But before WHAT IS APC ?
+**What Is APC?**
 
-    So APC stands for Asynchronous procedure calls these are the functions executed asynchronously within a specific thread of a Machine . Basically a request sent to a
-    THREAD.
-    
-    
+APC stands for Asynchronous Procedure Call.
 
-    Here is a Breakdown of Asynchronous procedure calls
+An Asynchronous Procedure Call is a mechanism in Windows where a function is scheduled to execute inside a specific thread, rather than running immediately.
 
-   Asynchronous    :
-  * The task does not run immediately.
-    
-  
-  * It does not block other operations.
-  
-  
-  * It runs later when the system is ready.
+In simple terms:
 
-   Procedure Calls :
+An APC is a request sent to a thread asking it to execute a piece of code at a later time.
 
-   
-  * A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context). 
+Breaking Down “Asynchronous Procedure Call”
+
+**Asynchronous**
+
+The task does not run immediately
+
+It does not block other operations
+
+It runs later, when the system decides it is safe to do so
+
+**Procedure Call**
+
+A request to execute a specific set of instructions
+
+Runs within a defined execution context, that is, a thread
 
 
-   There are three types of APCs
+**There are three types of APCs**
 
    * SIMPLE APC
    * EARLY BIRD APC
    * SPECIAL USER APC
 
 
-     - SIMPLE APC - A simple APC runs only when a thread is waiting or idle (in an alertable
+     **SIMPLE APC** - A simple APC runs only when a thread is waiting or idle (in an alertable
      state)
 
        for example :
@@ -231,7 +234,7 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
 
 
-     - EARLY BIRD APC - In this the APC is queued before that thread starts running so
+     **EARLY BIRD APC** - In this the APC is queued before that thread starts running so
        that it executes as soon as the thread begins
 
        for example :
@@ -243,7 +246,7 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
 
        
-     - SPECIAL USER APC - It is a high priority APC and run when certain system events happen
+     **SPECIAL USER APC** - It is a high priority APC and run when certain system events happen
        even if the thread is not waiting .
 
        for example :
@@ -265,38 +268,48 @@ is the OS-approved reference that allows safe and controlled operations on that 
 <img width="813" height="82" alt="image" src="https://github.com/user-attachments/assets/e64d9612-0048-4b6c-a364-3920e08f8f97" />
 
 
-that takes us to WHAT IS **APC INJECTION** ?
+NOW COMES THE REAL ATTACK: APC INJECTION
 
-A process of attaching a malicious code to the APC queue or APC Injection is a process injection technique that abuses Window's
-Asynchronous Procedure Call mechanism to execute injected code(i.e malicious code) inside an existing thread without creating a new one.
+Now that we understand APCs, we can define APC Injection.
+
+**WHAT IS APC INJECTION?**
+
+APC Injection is a process injection technique that abuses Windows’ APC mechanism to execute malicious code inside an existing thread, without creating a new thread.
+
+In simple words:
+
+The attacker injects shellcode into memory and queues it as an APC, waiting for the right moment to execute.
 
 **APC QUEUE**
 
-- An APC queue is a list where Asynchronous Procedure Calls (APCs) are stored until 
-            they are ready to run.
+The APC Queue is a per-thread waiting list where Asynchronous Procedure Calls (APCs) are stored until they can be executed.
 
- SIMPLE BREAKDOWN :
+Key points:
 
- -When an APC is created , it is placed into the APC queue of a thread .
- there 
+APCs are queued, not executed immediately
 
- -The APC waits in the queue until the thread is allowed to execute it 
+Each thread has its own APC queue
 
- -The APC runs when the thread enters an _**ALERTABLE STATE**_ or when Conditions for that APC is met.
+APCs wait until execution conditions are met
 
-
+Analogy:
+Like background notifications piling up while you study, APCs wait silently in the queue.
 
 **ALERTABLE STATE**
 
-- A special state where a THREAD temporarily pauses its main work to process its APC
-  QUEUE .
+The Alertable State is a special state where a thread temporarily pauses its main execution to process APCs from its APC queue.
 
-  for example:
+Key points:
 
-  Think of a scheduled Break during your study hours to do some doom scrolling .
-  basically a coffee break.
+Allows queued APCs to execute
 
+Occurs during specific wait operations
 
+Normal execution resumes afterward
+
+Analogy:
+Like a scheduled study break for doom scrolling, the thread takes a pause, handles pending tasks, and then gets back to work.
+Refer to the figure below for better understanding
   <img width="808" height="212" alt="image" src="https://github.com/user-attachments/assets/f2a37c0f-ef78-4963-ac0a-699a329791f8" />
 
 
