@@ -30,15 +30,15 @@
 So now WHAT IS A PROCESS IN A COMPUTER?
 - A PROCESS is basically a type of conatiner that helps the commands to get executed inside it when they are assigned with the help of THREAD.
 
-  for example : _virtualbox.exe, notepad.exe, androidstudio.exe_
+  for example : _spotify.exe, notepad.exe, androidstudio.exe_
 
   _Opening Notepad.exe creates a process._
 
-  _Opening Android Studio creates another process._
+  _Opening spotify creates another process._
 
   _Each process runs independently._
 
- Now with context to APC injection the attacker will choose a target process like ANDROID STUDIO to run their malicious code inside it.
+ Now with context to APC injection the attacker will choose a target process like notepad to run their malicious code inside it.
 
   
 # _**THREAD:**_
