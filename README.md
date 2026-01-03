@@ -60,6 +60,13 @@ well a Virtal Memory also need permission to READ , WRITE AND EXECUTE an assigne
 
 that takes us to a brief note of MEMORY PERMISSIONS (R/W/X) :
 
+* **Read (R):** Allows a program to read data from a memory location.
+* **Write (W):** Allows a program to modify or store data in a memory location.
+* **Execute (X):** Allows the CPU to run instructions from a memory location.
+* These permissions prevent misuse of memory, such as executing data or modifying code.
+* The operating system enforces these permissions to keep programs secure and stable.
+
+
 
 
 
