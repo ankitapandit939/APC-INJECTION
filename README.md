@@ -100,7 +100,7 @@ that takes us to a brief note of **MEMORY PERMISSIONS (R/W/X)** :
   In contect to the APC INJECTION Shellcode (malicious code) is written into the virtual memory space of the target process _(ex-notepad.exe)_.
 
 
-  Even if there are permissions for Virtualalloc() attackers can misuse the memory by using **SHELL CODE** but what is it ?
+  Even if there are permissions for VirtualallocEx() attackers can misuse the memory by using **SHELL CODE** but what is it ?
 
 
   A Shell Code is basically a A malicious Payload (CODE) that can make our system Vulnerable , but to run this payload in Virtual Memory the attacker needs to
@@ -165,12 +165,18 @@ is the OS-approved reference that allows safe and controlled operations on that 
     Here is a Breakdown of Asynchronous procedure calls
 
    Asynchronous    :
-                   * The task does not run immediately.
-                   * It does not block other operations.
-                   * It runs later when the system is ready.
+  * The task does not run immediately.
+    
+  
+  * It does not block other operations.
+  
+  
+  * It runs later when the system is ready.
 
    Procedure Calls :
-                   * A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context). 
+
+   
+  * A request to run a specific set of instructions (like a function or routine) within a defined execution environment (context). 
 
 
    There are three types of APCs
