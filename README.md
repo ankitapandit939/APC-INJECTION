@@ -314,7 +314,27 @@ Like a scheduled study break for doom scrolling, the thread takes a pause, handl
 Refer to the figure below for better understanding
   <img width="808" height="212" alt="image" src="https://github.com/user-attachments/assets/f2a37c0f-ef78-4963-ac0a-699a329791f8" />
 
+# **Now let’s actually see APC Injection (a demonstration, not a real attack)**
 
+Up until now, everything we discussed lived in theory.
+
+Processes.
+Threads.
+Memory.
+APCs waiting patiently in queues.
+
+But concepts truly click only when you see them happen.
+
+So in this section, we’ll walk through a small, controlled demonstration of APC Injection.
+
+Not a real attack.
+Not malware.
+No persistence.
+No damage.
+
+Just enough to watch the mechanism breathe.
+
+Think of it like pressing the transparent side panel of a CPU cabinet you’re not breaking anything, just observing how things move inside.
 
 ```
 #include <windows.h>
