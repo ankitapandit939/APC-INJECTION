@@ -359,7 +359,7 @@ Something meant to bypass security products
 If theory explained what APC Injection is,
 this demo explains when and how it actually executes.
 
-# ** The idea behind the demo (before code) **
+# **The idea behind the demo (before code)**
 Instead of jumping straight into code, let’s set the scene.
 
 Imagine this sequence:
@@ -447,9 +447,58 @@ int main() {
 ```
 Now let’s slow this down and experience it the way Windows does.
 
+# **Step 1: Creating a suspended process (the “pause before music” moment)**
+```
+CREATE_SUSPENDED
+```
 
 
+This single flag changes everything.
 
+When Notepad is created:
+
+The process exists
+
+The main thread exists
+
+But execution hasn’t begun
+
+That’s why, when you run the program, you see:
+
+A blank Notepad window
+
+No text
+
+No activity
+
+It’s like opening Spotify, but the song hasn’t started yet.
+
+This is the “Early-Bird” part 
+we’re preparing everything before the thread wakes up.
+
+# **Step 2: Placing instructions in memory (quiet, invisible)**
+```
+VirtualAllocEx + WriteProcessMemory
+```
+
+
+At this stage:
+
+Memory is allocated inside Notepad
+
+The memory is executable
+
+The shellcode is written
+
+But nothing happens.
+
+No popup.
+No calculator.
+No crash.
+
+Because memory ≠ execution.
+
+Just like downloading an ad doesn’t mean it plays immediately.
 
 
 
