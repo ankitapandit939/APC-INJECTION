@@ -74,20 +74,20 @@ So now WHAT IS A PROCESS IN A COMPUTER?
 
 
 
-A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer.
+- A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer.
 
-For more clear understanding think that _YOU OPEN CHROME AND SEARCH FOR SPOTIFY_
-
-
-What happens next SPOTIFY loads and you search/view a SONG on your feed 
-
-how does this process happens ? for this process THREAD plays a major role 
+    For more clear understanding think that _YOU OPEN CHROME AND SEARCH FOR SPOTIFY_
 
 
-One thread loads a webpage(i.e SPOTIFY webpage)
+   _What happens next SPOTIFY loads and you search/view a SONG on your feed_ 
+
+   _How does this process happens ? for this process THREAD plays a major role_
 
 
-Another plays a plays the song.
+   _One thread loads a webpage(i.e SPOTIFY webpage)_
+
+
+   _Another plays a plays the song._
 
 
 
