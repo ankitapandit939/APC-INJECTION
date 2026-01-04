@@ -155,24 +155,24 @@ There are some important points that must be noted:
 
 
 
-But before we talk about APC there is one more important thing and that is **WINDOWS API**
+   But before we talk about APC there is one more important thing and that is **WINDOWS API**
 
-  Now what is WINDOWS API ? 
+   Now what is WINDOWS API ? 
 
   -In simple words these are the commands through which programs ask windows to run/do things .
 
-for example
+   for example
  
   * opening a file
 
 
   * allocating a memory
 
-Since APC INJECTION is more about using THREADS ,
+   Since APC INJECTION is more about using THREADS ,
 
-in programs to pinpoint a specific thread we need a unique id right? And here comes the role of _HANDLE_ which 
+   in programs to pinpoint a specific thread we need a unique id right? And here comes the role of _HANDLE_ which 
 
-is the OS-approved reference that allows safe and controlled operations on that exact thread.
+   is the OS-approved reference that allows safe and controlled operations on that exact thread.
 
 
   - A Handle is a unique identifier that gives access to a specific thread or process that an attacker can use to ADD their APC to the TARGETS thread queue.
@@ -187,7 +187,8 @@ is the OS-approved reference that allows safe and controlled operations on that 
 
 
 
-Now that we are almost done with the prerequisites, let us connect these concepts and gradually move toward our main topic of discussion, beginning with what we mean       by an Asynchronous Procedure Call (APC).
+    Now that we are almost done with the prerequisites, let us connect these concepts and gradually move toward our main topic of discussion, beginning with what we mean   by an Asynchronous Procedure Call (APC).
+    
 
 **What Is APC?**
 
@@ -311,6 +312,8 @@ Normal execution resumes afterward
 
 Analogy:
 Like a scheduled study break for doom scrolling, the thread takes a pause, handles pending tasks, and then gets back to work.
+
+
 Refer to the figure below for better understanding
 
 
