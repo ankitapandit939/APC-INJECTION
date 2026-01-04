@@ -572,6 +572,10 @@ And suddenly…
 
 **Calculator opens**
 
+
+<img width="1603" height="844" alt="image" src="https://github.com/user-attachments/assets/308a3976-62ce-452b-9cad-ced7c2cd2989" />
+
+
 Not because we launched it directly,
 but because the thread ran our queued instruction during its allowed break.
 
