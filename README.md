@@ -336,6 +336,55 @@ Just enough to watch the mechanism breathe.
 
 Think of it like pressing the transparent side panel of a CPU cabinet you’re not breaking anything, just observing how things move inside.
 
+# **What this demonstration is (and what it isn’t)**
+
+Let’s be very clear.
+
+This demo:
+
+Uses a harmless payload (Calculator)
+
+Runs in a controlled environment
+
+Exists only to visualize execution flow
+
+This demo is not:
+
+A real-world malware sample
+
+An evasion technique
+
+Something meant to bypass security products
+
+If theory explained what APC Injection is,
+this demo explains when and how it actually executes.
+
+# ** The idea behind the demo (before code) **
+Instead of jumping straight into code, let’s set the scene.
+
+Imagine this sequence:
+
+Windows creates a process, but pauses it before it really starts
+
+We quietly place some instructions inside its memory
+
+We don’t force execution
+
+We don’t create a new thread
+
+We just say:
+“When you get a break… run this.”
+
+That polite request is an APC.
+
+And because we queue it before the thread even starts, this becomes an Early-Bird APC.
+
+Now let’s see how that looks in code.
+
+# **The demonstration code (reference)**
+
+Don’t try to memorize this.
+We’ll walk through it like a story.
 ```
 #include <windows.h>
 
@@ -396,7 +445,7 @@ int main() {
     return 0;
 }
 ```
- 
+Now let’s slow this down and experience it the way Windows does.
 
 
 
