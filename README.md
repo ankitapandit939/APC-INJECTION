@@ -479,6 +479,11 @@ No activity
 It’s like opening Spotify, but the song hasn’t started yet.
 
 This is the “Early-Bird” part 
+
+
+<img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/9cf64984-6e25-4448-8264-467ebf1f164a" />
+
+
 we’re preparing everything before the thread wakes up.
 
 # **Step 2: Placing instructions in memory (quiet, invisible)**
