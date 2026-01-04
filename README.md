@@ -499,7 +499,88 @@ No crash.
 Because memory ≠ execution.
 
 Just like downloading an ad doesn’t mean it plays immediately.
+# **Step 3: Queueing the APC (asking, not forcing)**
+```
+QueueUserAPC(...)
+```
 
 
+This is the most misunderstood part.
+
+This line does not execute code.
+
+It simply says:
+
+```“Hey thread, when you’re ready… run this for me.”```
+
+The shellcode is now:
+
+Sitting in the APC queue
+
+Tied to a specific thread
+
+Waiting for the right moment
+
+No interruption.
+No urgency.
+Just patience.
+# **Step 4: The waiting period (why nothing happens)***
+```
+Sleep(5000);
+```
 
 
+This delay exists so you can observe the behavior.
+
+During this time:
+
+Notepad is visible
+
+Calculator does not open
+
+The APC is waiting silently
+
+This reinforces the core idea:
+
+```APCs do not run immediately.They wait.```
+
+# **Step 5: Resuming the thread (this is where it clicks)**
+
+```
+ResumeThread(...)
+```
+
+
+This is the moment everything connects.
+
+When the thread resumes:
+
+Windows begins normal execution
+
+The thread enters internal alertable checks
+
+The APC queue is processed
+
+The queued APC executes
+
+And suddenly…
+
+**Calculator opens**
+
+Not because we launched it directly,
+but because the thread ran our queued instruction during its allowed break.
+
+Once done, the thread continues like nothing happened.
+
+Just like Spotify resuming your song after an ad.
+
+# **The real takeaway (not the calculator)**
+
+The calculator isn’t the point.
+
+The point is this:
+
+```Windows allowed foreign code to execute inside a legitimate thread not immediately, not forcibly, but politely.```
+
+That’s why APC Injection is powerful.
+And that’s why defenders care about it.
