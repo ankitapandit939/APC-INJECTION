@@ -67,10 +67,12 @@ So now WHAT IS A PROCESS IN A COMPUTER?
 
  Now with context to APC injection the attacker will choose a target process like notepad to run their malicious code inside it.
 
+ that takes us to our next basic unit THREAD
+
   
 # _**THREAD:**_
 
-that takes us to our next basic unit THREAD
+
 
 A THREAD is a fundamental unit of a PROCESS , it is the Thread that performs the execution of a assigned task or command in the Computer.
 
