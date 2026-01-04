@@ -270,7 +270,7 @@ Runs within a defined execution context, that is, a thread
 <img width="813" height="82" alt="image" src="https://github.com/user-attachments/assets/e64d9612-0048-4b6c-a364-3920e08f8f97" />
 
 
-NOW COMES THE REAL ATTACK: APC INJECTION
+_**NOW COMES THE REAL ATTACK: APC INJECTION**_
 
 Now that we understand APCs, we can define APC Injection.
 
@@ -312,9 +312,14 @@ Normal execution resumes afterward
 Analogy:
 Like a scheduled study break for doom scrolling, the thread takes a pause, handles pending tasks, and then gets back to work.
 Refer to the figure below for better understanding
+
+
   <img width="808" height="212" alt="image" src="https://github.com/user-attachments/assets/f2a37c0f-ef78-4963-ac0a-699a329791f8" />
 
+  
+
 # **Now let’s actually see APC Injection (a demonstration, not a real attack)**
+
 
 Up until now, everything we discussed lived in theory.
 
